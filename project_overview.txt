@@ -1,0 +1,186 @@
+The Ultimate Free Lucidchart Alternative – Flow/Mind Map Builder
+
+OBJECTIVE
+
+Build a fully-featured, online flowchart and mind map builder that is a true alternative to Lucidchart - https://www.lucidchart.com/ , with every single feature (including premium/AI), unlimited usage, and a beautiful, dark-themed, professional-grade user interface.
+The app must be 100% free, require no login, and be fully open-source, with all code in my connected GitHub repo, and live for the world to use.
+
+CORE REQUIREMENTS
+
+    Feature Parity with Lucidchart
+
+        Flowchart Creation: Drag-and-drop shapes (boxes, circles, diamonds, connectors/arrows, lines, images, icons, etc.)
+
+        Mind Maps: Tree/branch mode, unlimited nesting, auto-layout
+
+        Templates Library: Ready-made org charts, flowcharts, swimlanes, UML, network diagrams, ERDs, etc.
+
+        Multi-Page Documents: Tabbed navigation for multiple diagrams
+
+        Layers/Groups: Lock, group, hide/reveal, z-order
+
+        Custom Styling: Colors, gradients, borders, shadows, fonts, shapes, icons, custom backgrounds
+
+        Import/Export: Export as PDF, PNG, SVG, and editable JSON; Import Lucidchart/Visio/Miro files if possible
+
+        Collaboration (optional): Real-time collab (using yjs or similar, only if fits free-tier/no backend cost)
+
+        Undo/Redo, Version History
+
+        Infinite Canvas with Pan & Zoom
+
+        Smart Connectors: Auto-routing lines, snapping, magnet points, bend points
+
+        Snap-to-Grid, Alignment Guides
+
+        Keyboard Shortcuts
+
+        Mobile and Tablet Responsive UI
+
+    Advanced/AI Features
+
+        AI Auto-Layout: Automatically arrange messy diagrams
+
+        AI Diagram Generator: User describes diagram in text, AI generates flowchart/mind map (use free in-browser LLM, WebLLM, or local HuggingFace.js models)
+
+        Smart Suggestions: Suggest next nodes/shapes as you build (AI-powered)
+
+        Text Summarization: Select a node or area, AI can summarize its content
+
+        OCR to Flowchart: User uploads a photo/sketch, AI parses and turns it into editable shapes (if possible, using in-browser tesseract.js for OCR)
+
+        Auto-formatting/Prettify Button: Beautify diagram with a single click
+
+    Modern, Professional Dark-Themed UI
+
+        Use a gorgeous, contemporary dark UI by default (glassmorphism/neumorphism welcome but keep pro vibes)
+
+        Highlighted colors, gradients, soft glow accents, crisp icons
+
+        Minimal topbar/sidebar, collapsible tool panels, floating context menus
+
+        Animated transitions, drag-and-drop feedback, smooth zoom/pan
+
+        Professional fonts and spacing (Inter, Roboto, or similar)
+
+        Custom logo, favicon, and landing page
+
+    No Login, No Limits, No Cost
+
+        No sign up, no paywalls, no hidden tricks
+
+        Works 100% in-browser; for any server-side needed, use only free, open-source backends (deploy on Render/Vercel/Cloudflare, never paid APIs)
+
+        Unlimited diagrams, unlimited exports
+
+    Free Hosting & Open Source
+
+        All code committed to my GitHub repo
+
+        Deployed on a free hosting service (Vercel/Netlify/Cloudflare)
+
+        Site must be public and accessible worldwide
+
+    Privacy First
+
+        No analytics, no tracking, no cookies (unless essential for local storage/undo)
+
+        All user data stays in-browser, unless collaborating (then only using free, privacy-first backends)
+
+    Accessibility & Documentation
+
+        Fully accessible UI (keyboard navigation, ARIA labels, high contrast, screen reader friendly)
+
+        README that explains all features, supported file types, stack, and privacy stance
+
+SPECIFIC TASKS & INSTRUCTIONS
+
+    Survey Lucidchart and List All Features
+
+        Create a checklist covering every Lucidchart (and similar tool) feature.
+
+        Mark as “included”, “in-progress”, or “not possible” (explain why).
+
+    Frontend
+
+        Build with React or another high-performance frontend
+
+        Use React Flow, Drawflow, or similar for the core canvas/diagramming
+
+        Apply a premium, pro-grade dark theme, with glowing accent colors and interactive panels
+
+    AI Features
+
+        Use open-source, in-browser models for LLM/diagram generation (WebLLM, Huggingface.js, Tesseract.js, etc.)
+
+        No paid OpenAI or third-party API calls
+
+    Backend (if collaboration is implemented)
+
+        Use only free-tier, open-source collaborative tools (yjs/Liveblocks free tier, or similar)
+
+        Otherwise, keep all processing local/in-browser
+
+    Export/Import
+
+        Export to PDF, PNG, SVG (in-browser), and editable JSON
+
+        Import/export Lucidchart/Visio if feasible (parse with OSS libraries)
+
+    Performance
+
+        Fast load, no jank; support for big, complex diagrams
+
+        Use Web Workers for heavy AI/layout/parse tasks
+
+    Deployment
+
+        Use GitHub Actions for CI/CD; auto-deploy to Vercel or similar
+
+    Documentation
+
+        Full README, user guide, privacy statement, and feature roadmap
+
+DELIVERABLES
+
+    Fully working, production-ready web app replicating all Lucidchart features (including AI/advanced tools), in my connected GitHub repo.
+
+    Free, public live deployment (Vercel, Netlify, Cloudflare, etc.) with unlimited user access.
+
+    Modern, professional dark-themed UI with all interactions, templates, and export/import options.
+
+    README file including:
+
+        Project overview and full feature list
+
+        Setup instructions and deployment steps
+
+        Contribution guidelines and code structure
+
+        Privacy statement
+
+        Licensing (MIT, Apache, or similar)
+
+    Templates library (built-in diagram samples for users)
+
+    Demo video or GIFs showcasing the main features (if possible)
+
+    Documentation for all advanced/AI features
+
+    No login, no user data retention, no analytics
+
+    Full accessibility (keyboard navigation, screen reader support, ARIA labels)
+
+    Ongoing updates: Future features added as Lucidchart evolves, and bugfixes as needed
+
+NOTES
+
+    The site must be the best free alternative to Lucidchart online, with every tool/feature and a pro UI
+
+    No paid features, limits, or analytics
+
+    Prioritize speed, privacy, and user control
+
+SUMMARY
+
+Build the most powerful, modern, and professional-grade free mind map & flowchart builder on the internet—matching Lucidchart feature for feature, with next-gen AI tools, a beautiful dark theme, and 100% privacy, open-source, and zero cost forever.
