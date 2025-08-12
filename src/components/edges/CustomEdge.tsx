@@ -116,7 +116,7 @@ export const CustomEdge: React.FC<EdgeProps<CustomEdgeData>> = ({
   );
 
   const strokeColor = data?.color || style.stroke || '#6366f1';
-  const strokeWidth = data?.strokeWidth || style.strokeWidth || 2;
+  const strokeWidth = Number(data?.strokeWidth || style.strokeWidth || 2);
   const strokeStyle = data?.strokeStyle || 'solid';
   const animated = data?.animated || false;
   const shadow = data?.shadow || false;
@@ -175,7 +175,6 @@ export const CustomEdge: React.FC<EdgeProps<CustomEdgeData>> = ({
         markerEnd={markerEnd}
         markerStart={markerStart}
         style={{ ...edgeStyle, ...selectedStyle }}
-        className={`react-flow__edge-path ${selected ? 'selected' : ''} ${animated ? 'animated' : ''}`}
       />
 
       {/* Interactive hover area for easier selection */}
@@ -184,7 +183,7 @@ export const CustomEdge: React.FC<EdgeProps<CustomEdgeData>> = ({
         fill="none"
         strokeOpacity={0}
         stroke="transparent"
-        strokeWidth={Math.max(strokeWidth * 3, 10)}
+        strokeWidth={Math.max(Number(strokeWidth) * 3, 10)}
         className="react-flow__edge-interaction"
         style={{ cursor: 'pointer' }}
       />
@@ -296,7 +295,7 @@ export const CustomEdge: React.FC<EdgeProps<CustomEdgeData>> = ({
         }
 
         .react-flow__edge-interaction:hover + .react-flow__edge-path {
-          stroke-width: ${strokeWidth + 1}px !important;
+          stroke-width: ${Number(strokeWidth) + 1}px !important;
           filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.3)) !important;
         }
       `}</style>

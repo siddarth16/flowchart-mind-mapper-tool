@@ -37,6 +37,9 @@ export const createNode = (
     data: {
       label,
       shape: type,
+      color: defaults.color || '#3b82f6',
+      borderColor: defaults.borderColor || '#1e40af',
+      textColor: defaults.textColor || '#ffffff',
       ...defaults,
     },
   };

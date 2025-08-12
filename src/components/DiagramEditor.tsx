@@ -14,7 +14,8 @@ import ReactFlow, {
   MarkerType,
   useReactFlow,
   getRectOfNodes,
-  getTransformForBounds
+  getTransformForBounds,
+  ConnectionLineType
 } from 'reactflow';
 
 import { useAppStore } from '../stores/useAppStore';
@@ -137,8 +138,9 @@ export const DiagramEditor: React.FC = () => {
   const onConnect = useCallback(
     (params: Connection) => {
       const newEdge: Edge = {
-        ...params,
         id: `e${params.source}-${params.target}-${Date.now()}`,
+        source: params.source!,
+        target: params.target!,
         type: 'custom',
         style: { stroke: '#6366f1', strokeWidth: 2 },
         markerEnd: {
@@ -391,7 +393,7 @@ export const DiagramEditor: React.FC = () => {
         maxZoom={3}
         snapToGrid
         snapGrid={[20, 20]}
-        connectionLineType="smoothstep"
+        connectionLineType={ConnectionLineType.SmoothStep}
         connectionLineStyle={{
           stroke: '#6366f1',
           strokeWidth: 2,
