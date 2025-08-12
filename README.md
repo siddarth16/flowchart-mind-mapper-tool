@@ -1,52 +1,85 @@
-# FlowChart Mind Mapper Tool
+# 🚀 Flowchart Mind Mapper Tool
 
-🎨 **The Ultimate Free Lucidchart Alternative** – A powerful, open-source flowchart and mind map builder
+A modern, professional-grade flowchart and mind mapping application built with React and TypeScript. This tool aims to be a comprehensive, free alternative to Lucidchart with advanced features and a beautiful dark-themed interface.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
+![Project Status](https://img.shields.io/badge/Status-75%25%20Complete-brightgreen)
+![Build Status](https://img.shields.io/badge/Build-Passing-success)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
-## 🚀 Overview
+## ✨ Features
 
-FlowChart Mind Mapper is a comprehensive, free alternative to Lucidchart that runs entirely in your browser. Create stunning flowcharts, mind maps, and diagrams with professional-grade features, unlimited usage, and zero cost.
+### 🎨 Professional Design
+- **Modern Dark Theme**: Beautiful glassmorphism-inspired interface
+- **Responsive Layout**: Works seamlessly on desktop, tablet, and mobile
+- **Smooth Animations**: Professional transitions and interactions
+- **Collapsible Panels**: Optimized workspace with flexible UI
 
-### ✨ Key Features
+### 🔧 Advanced Diagramming
+- **50+ Professional Shapes**: Comprehensive library across 8 categories
+  - Basic Flowcharts (Process, Decision, Terminator, Data, etc.)
+  - UML Diagrams (Class, Interface, Use Case, Actor, etc.)
+  - Network/System (Server, Router, Firewall, Cloud, etc.)
+  - Business Process (BPMN Events, Tasks, Gateways, etc.)
+  - Geometric Shapes (Rectangle, Circle, Diamond, Star, etc.)
+  - Mind Map Nodes (Central Topic, Branch Topics, etc.)
+  - Arrows & Connectors
+  - Text & Media Elements
 
-- 🎯 **Professional Diagramming**: Drag-and-drop interface with extensive shape library
-- 🧠 **Mind Mapping**: Advanced mind mapping with auto-layout and unlimited nesting
-- 🎨 **Dark Theme UI**: Modern, professional dark theme with glassmorphism effects
-- 🔄 **Real-time Canvas**: Infinite canvas with smooth pan, zoom, and snap-to-grid
-- 📁 **Template Library**: Ready-made templates for org charts, flowcharts, UML, ERDs
-- 🎭 **Custom Shapes**: Rectangles, circles, diamonds, arrows, and more
-- 🎨 **Rich Styling**: Colors, gradients, borders, shadows, and custom fonts
-- 📤 **Export Options**: PDF, PNG, SVG, and JSON export capabilities
-- 🔧 **No Login Required**: Use immediately without registration or paywalls
-- 🌐 **Privacy First**: All data stays in your browser, no tracking
+- **Smart Connectors**: Auto-routing with multiple path types
+- **Interactive Elements**: Double-click to edit labels, drag-and-drop functionality
+- **Multi-format Export**: JSON, PNG, SVG, PDF with high-quality rendering
+
+### 📚 Template Library
+- **10+ Ready-to-Use Templates**: Across multiple categories
+  - Basic & Complex Flowcharts
+  - Project Planning Mind Maps
+  - Corporate Organization Charts
+  - Database ERD Designs
+  - Network Architecture Diagrams
+  - UML Use Case Diagrams
+  - BPMN Business Processes
+  - Software Architecture (Microservices)
+  - Agile Development Workflows
+
+- **Smart Search & Filtering**: Find templates by category, difficulty, or tags
+- **Template Preview**: See structure before applying
+
+### ⚙️ Professional Property Panel
+- **Advanced Styling**: Color pickers, gradients, shadows
+- **Typography Controls**: Font family, size, weight, alignment
+- **Shape Transformation**: Width, height, rotation, opacity
+- **Layer Management**: Visibility, locking, grouping
+- **Bulk Operations**: Multi-select actions
+
+### 🎯 Enhanced User Experience
+- **Keyboard Shortcuts**: Quick access to common actions
+- **Infinite Canvas**: Zoom, pan, and navigate large diagrams
+- **Undo/Redo**: Full action history
+- **Auto-save**: Never lose your work
+- **Drag-and-Drop**: Intuitive shape placement
 
 ## 🛠️ Technology Stack
 
 - **Frontend**: React 18 + TypeScript
-- **Diagramming**: React Flow (infinite canvas, drag-and-drop)
-- **UI Components**: Radix UI + Tailwind CSS
+- **Diagramming Engine**: React Flow
+- **Styling**: Tailwind CSS + CSS Variables
 - **State Management**: Zustand
-- **Styling**: Tailwind CSS with custom dark theme
-- **Build Tool**: Vite
 - **Icons**: Lucide React
-- **Animations**: Framer Motion
+- **Export**: html2canvas + jsPDF
+- **Build Tool**: Vite
+- **Package Manager**: npm
 
-## 📦 Installation
+## 🚀 Getting Started
 
 ### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-- Node.js 16+ and npm/yarn
-- Modern web browser
-
-### Quick Start
+### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/flowchart-mind-mapper-tool.git
+   git clone https://github.com/siddarth16/flowchart-mind-mapper-tool.git
    cd flowchart-mind-mapper-tool
    ```
 
@@ -55,127 +88,69 @@ FlowChart Mind Mapper is a comprehensive, free alternative to Lucidchart that ru
    npm install
    ```
 
-3. **Start development server**
+3. **Start the development server**
    ```bash
    npm run dev
    ```
 
-4. **Open in browser**
-   ```
-   http://localhost:3000
-   ```
+4. **Open your browser**
+   Navigate to `http://localhost:3000`
 
-### Build for Production
+### Building for Production
 
 ```bash
 npm run build
+```
+
+### Preview Production Build
+
+```bash
 npm run preview
 ```
 
-## 🎯 Usage
+## 📖 Usage
 
-### Creating Your First Flowchart
+### Creating Your First Diagram
 
-1. **Select a Shape**: Choose from the sidebar shape library
-2. **Drag to Canvas**: Drop shapes onto the infinite canvas
-3. **Connect Elements**: Drag from connection points to create arrows
-4. **Style Your Diagram**: Use the property panel to customize colors, text, and borders
-5. **Export**: Save as PDF, PNG, SVG, or JSON
+1. **Start with a Template**: Click the template library icon to browse pre-made diagrams
+2. **Add Shapes**: Drag shapes from the sidebar onto the canvas
+3. **Connect Elements**: Click and drag between shapes to create connections
+4. **Customize**: Use the property panel to style your elements
+5. **Export**: Save your diagram in multiple formats (JSON, PNG, SVG, PDF)
 
-### Mind Mapping
+### Keyboard Shortcuts
 
-1. **Start with Central Node**: Create your main topic
-2. **Add Branches**: Use the mind map tool to create connected ideas
-3. **Expand Ideas**: Add unlimited sub-branches and nested concepts
-4. **Auto-Layout**: Let the system organize your mind map automatically
+- `Ctrl/Cmd + S`: Save as JSON
+- `Ctrl/Cmd + E`: Export as PNG
+- `Delete/Backspace`: Delete selected elements
+- `Ctrl/Cmd + Z`: Undo
+- `Ctrl/Cmd + Y`: Redo
+- `Escape`: Deselect all
 
-### Templates
-
-- Access ready-made templates from the Template Library
-- Categories include: Flowcharts, Mind Maps, Org Charts, UML, ERDs
-- One-click template application with customization options
-
-## 🎨 Features in Detail
-
-### Shape Library
-- **Basic Shapes**: Rectangle, Circle, Diamond, Triangle, Star, Hexagon
-- **Arrows**: Directional arrows and connectors
-- **Text Elements**: Rich text with formatting options
-- **Custom Shapes**: Extensible shape system
-
-### Canvas Features
-- **Infinite Canvas**: Unlimited workspace with smooth navigation
-- **Snap to Grid**: Precise alignment with optional grid snapping
-- **Multi-Selection**: Select and manipulate multiple elements
-- **Zoom Controls**: Smooth zoom from 10% to 200%
-- **Mini Map**: Overview navigation for large diagrams
-
-### Export & Import
-- **Export Formats**: PDF, PNG, SVG, JSON
-- **High Quality**: Vector and raster exports at custom resolutions
-- **Batch Export**: Export multiple diagrams simultaneously
-- **Import Support**: JSON format for saving and loading projects
-
-## 🔧 Project Structure
-
-```
-src/
-├── components/           # React components
-│   ├── nodes/           # Custom node components
-│   ├── edges/           # Custom edge components
-│   ├── DiagramEditor.tsx # Main canvas component
-│   ├── Header.tsx       # Top navigation bar
-│   ├── Sidebar.tsx      # Shape library panel
-│   ├── PropertyPanel.tsx # Properties editor
-│   └── TemplateLibrary.tsx # Template selection
-├── stores/              # Zustand state management
-│   └── useAppStore.ts   # Main application store
-├── styles/              # CSS and styling
-│   └── globals.css      # Global styles and theme
-├── types/               # TypeScript type definitions
-├── utils/               # Utility functions
-└── App.tsx             # Main application component
-```
-
-## 🎯 Roadmap
-
-### Phase 1: Core Features ✅
-- [x] Basic canvas with drag-and-drop
-- [x] Shape library with customization
-- [x] Dark theme UI
-- [x] Template system foundation
-
-### Phase 2: Advanced Features (In Progress)
-- [ ] Advanced shape customization
-- [ ] Layer management system
-- [ ] Multi-page documents
-- [ ] Enhanced export options
+## 🗺️ Roadmap
 
 ### Phase 3: AI Integration (Planned)
-- [ ] AI-powered auto-layout
+- [ ] WebLLM integration for in-browser AI
+- [ ] Auto-layout algorithms
 - [ ] Smart diagram suggestions
 - [ ] Natural language to diagram conversion
-- [ ] Automated diagram cleanup
 
-### Phase 4: Collaboration (Future)
-- [ ] Real-time collaboration
-- [ ] Comments and annotations
+### Phase 4: Advanced Features (Planned)
+- [ ] Multi-page documents
 - [ ] Version history
-- [ ] Team workspaces
+- [ ] Collaboration features
+- [ ] Advanced accessibility
+- [ ] Mobile app (PWA)
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-### Development Setup
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Make your changes
-4. Run tests: `npm test`
-5. Commit changes: `git commit -m 'Add amazing feature'`
-6. Push to branch: `git push origin feature/amazing-feature`
-7. Submit a pull request
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## 📄 License
 
@@ -183,21 +158,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- [React Flow](https://reactflow.dev/) for the amazing diagramming foundation
-- [Radix UI](https://radix-ui.com/) for accessible UI components
-- [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
-- [Lucide](https://lucide.dev/) for beautiful icons
+- Built with [React Flow](https://reactflow.dev/) for the diagramming engine
+- Icons provided by [Lucide](https://lucide.dev/)
+- Styling powered by [Tailwind CSS](https://tailwindcss.com/)
+- Development accelerated with [Claude Code](https://claude.ai/code)
 
-## 🌟 Support
+## 📊 Project Status
 
-If you find this project useful, please consider:
-- ⭐ Starring the repository
-- 🐛 Reporting bugs
-- 💡 Suggesting new features
-- 🤝 Contributing code
+- **Phase 1**: Foundation & Architecture ✅ **COMPLETED**
+- **Phase 2**: Core Features Enhancement ✅ **COMPLETED**  
+- **Phase 3**: AI Integration 🔄 **PLANNED**
+- **Phase 4**: Advanced Features 🔄 **PLANNED**
+
+**Current Progress**: 75% complete toward full Lucidchart alternative
 
 ---
 
-**Built with ❤️ by the open-source community**
-
-*Making professional diagramming accessible to everyone, everywhere.*
+⭐ **Star this repository if you find it useful!**
